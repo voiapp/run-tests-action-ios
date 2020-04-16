@@ -1,0 +1,17 @@
+
+name: Run Tests
+description: An action for running tests
+author: "andyhuber"
+branding:
+  icon: "archive"
+  color: "gray-dark"
+inputs:
+  environment:
+    description: "The App environment to run."
+    required: true
+  developer_dir:
+    description: "Xcode directory"
+    required: true
+runs:
+  using: node12
+  main: main.js
